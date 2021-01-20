@@ -1,50 +1,7 @@
 <template>
-  <!-- <v-app> -->
   <div class="main">
     <div class="content">
       <div class="cardsGridBelowDivider">
-        <!-- <v-row>
-          <v-col v-for="(item, index) in cards" :key="index">
-            <v-card
-              lg="6"
-              md="6"
-              sm="12"
-              xs="12"
-              class="cardGridColumn"
-              :loading="loading"
-              
-            >
-              <template slot="progress">
-                <v-progress-linear
-                  color="deep-purple"
-                  height="10"
-                  indeterminate
-                ></v-progress-linear>
-              </template>
-
-              <v-img
-                class="cardImage"
-                ref="cardImage"
-                fluid
-                height="280"
-                :src="item.src"
-              ></v-img>
-
-              <v-card-title>
-                <div class="card-heading">{{ item.cat }}</div>
-              </v-card-title>
-
-              <v-card-text class="card-text">
-                <div class="card-title ">
-                  {{ item.title }}
-                </div>
-                <div class="card-description">
-                  {{ item.desc }}
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row> -->
         <v-row>
           <v-col
             lg="6"
@@ -95,7 +52,6 @@
       <button class="loadMoreButton">Load more</button>
     </div>
   </div>
-  <!-- </v-app> -->
 </template>
 <script>
 export default {
@@ -131,28 +87,22 @@ export default {
   padding-left: 82px;
 }
 .loadMore {
-  /* padding-left: 480px; */
-  /* padding-right: 520px; */
   padding-left: 45.14%;
   padding-right: 48.872%;
-  /* margin-top: 165px; */
 }
 .loadMoreButton {
   font-family: PlayfairDisplay-Regular, AdobeInvisFont, MyriadPro-Regular;
   font-size: 20px !important;
   color: rgba(98, 98, 98, 255) !important;
-  /* text-align: left !important; */
   padding: 17px 34px;
   width: 164px;
-  /* height: 60px; */
-  /* background-color: #ddddd7; */
   border: 1px solid #626262;
 }
-@media only screen and (min-width: 1200px){
-  .cardGridColumn{
+@media only screen and (min-width: 1200px) {
+  .cardGridColumn {
     padding: 0px !important;
   }
-  .cardImage{
+  .cardImage {
     width: 420px;
   }
 }
@@ -183,8 +133,8 @@ export default {
     padding-bottom: 0px;
   }
   .loadMore {
-  padding-left: 38.82%;
-  padding-right: 0px;
+    padding-left: 38.82%;
+    padding-right: 0px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -192,8 +142,8 @@ export default {
     padding: 0px;
   }
   .loadMore {
-  padding-left: 122px;
-  padding-right: 122px;
+    padding-left: 122px;
+    padding-right: 122px;
   }
   .loadMoreButton {
     padding: 5px 12px;

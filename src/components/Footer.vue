@@ -34,8 +34,6 @@
   padding-top: 40px;
   padding-bottom: 45px;
   width: 136px !important;
-
-  /* margin-left: 150px; */
   margin-left: 8.162%;
 }
 .privacy {
@@ -47,14 +45,12 @@
   padding-top: 40px;
   padding-bottom: 45px;
   width: 46px;
-  /* margin-left: 17px; */
   margin-right: 0.925%;
 }
 .socialHandle {
   display: flex;
   margin-left: auto;
   margin-right: 3.863%;
-  /* margin-right: 71px; */
 }
 .follow {
   font-size: 14px;
@@ -66,7 +62,6 @@
   padding-bottom: 45px;
   width: 42px;
   margin-left: auto;
-  /* margin-right: 21px; */
   margin-right: 15.12%;
 }
 .facebook {
@@ -77,8 +72,6 @@
   font-family: "Playfair Display";
   padding-top: 40px;
   padding-bottom: 44px;
-
-  /* margin-left: 21px; */
   margin-left: 17.8%;
   padding-bottom: 43px;
 }
@@ -90,13 +83,11 @@
   font-family: "Playfair Display";
   padding-top: 40px;
   padding-bottom: 44px;
-  /* margin-left: 17px; */
   margin-left: 17%;
 }
 .instagram {
   padding-top: 40px;
   padding-bottom: 42px;
-  /* margin-left: 18px; */
   margin-left: 21.8%;
 }
 

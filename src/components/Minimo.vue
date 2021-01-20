@@ -1,5 +1,4 @@
 <template>
-  <!-- <v-app> -->
   <div>
     <div class="navBarButton">
       <header class="w3-container headBar">
@@ -138,57 +137,57 @@
       </div>
     </div>
   </div>
-
-  <!-- </v-app> -->
 </template>
 
 <script>
 import vClickOutside from "v-click-outside";
 export default {
-  data: () => ({
-    loading: false,
-    directives: {
-      clickOutside: vClickOutside.directive,
-    },
-    cards: [
-      {
-        src: require("../assets/card1.png"),
-        title: "Life tastes better with coffee",
-        desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  data() {
+    return {
+      loading: false,
+      directives: {
+        clickOutside: vClickOutside.directive,
+      },
+      cards: [
+        {
+          src: require("../assets/card1.png"),
+          title: "Life tastes better with coffee",
+          desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris`,
-        cat: "LIFESTYLE",
-      },
-      {
-        src: require("../assets/card2.png"),
-        title: "More than just a music festival",
-        desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          cat: "LIFESTYLE",
+        },
+        {
+          src: require("../assets/card2.png"),
+          title: "More than just a music festival",
+          desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris`,
-        cat: "LIFESTYLE",
-      },
-      {
-        src: require("../assets/card3.png"),
-        title: "American dream",
-        desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          cat: "LIFESTYLE",
+        },
+        {
+          src: require("../assets/card3.png"),
+          title: "American dream",
+          desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris`,
-        cat: "PHOTODIARY",
-      },
-      {
-        src: require("../assets/card4.png"),
-        title: "A day exploring the Alps",
-        desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          cat: "PHOTODIARY",
+        },
+        {
+          src: require("../assets/card4.png"),
+          title: "A day exploring the Alps",
+          desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris`,
-        cat: "PHOTODIARY",
-      },
-    ],
-  }),
+          cat: "PHOTODIARY",
+        },
+      ],
+    };
+  },
   mounted() {},
   methods: {
     onClickOutside() {
@@ -206,14 +205,12 @@ export default {
         .getElementsByClassName("menuContainer")[0]
         .classList.toggle("change");
       this.$refs.sidenav.style.display = "block";
-      // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     },
     closeMenu() {
       document
         .getElementsByClassName("menuContainer")[0]
         .classList.toggle("change");
       this.$refs.sidenav.style.display = "none";
-      // document.body.style.backgroundColor = "white";
     },
 
     reserve() {
@@ -228,8 +225,6 @@ export default {
 <style>
 @import "../assets/stylesheets/stylesheet.css";
 .headBar {
-  /* background-color: darkcyan; */
-  /* position: fixed; */
   width: 100%;
   z-index: 9999;
 }
@@ -290,7 +285,6 @@ nav {
   width: auto;
 }
 .topbar .minimologo {
-  /* margin-right: 371px; */
   margin-right: 35.84%;
 }
 
@@ -310,15 +304,12 @@ nav {
   text-align: center;
 }
 .topbar .lifestyle {
-  /* margin-right: 121px; */
   margin-right: 40.5%;
 }
 .topbar .photodiary {
-  /* margin-right: 103px; */
   margin-right: 39.5%;
 }
 .topbar .music {
-  /* margin-right: 95px; */
   margin-right: 36.43%;
 }
 .firstpost {
@@ -329,7 +320,6 @@ nav {
   font-size: 16px;
   color: rgba(180, 173, 158, 255);
   text-align: left;
-  /* padding-left: 82px; */
   padding-left: 7.7%;
 }
 .contentFirstPostTitle {
@@ -337,7 +327,6 @@ nav {
   font-size: 30pt;
   color: rgba(98, 98, 98, 255);
   text-align: left;
-  /* padding-left: 81px; */
   padding-left: 7.69%;
   margin-top: 2.63%;
   margin-bottom: 3.2%;
@@ -345,8 +334,6 @@ nav {
 .contentFirstPostDescription {
   padding-left: 7.528%;
   padding-right: 8.359%;
-  /* padding-left: 80px; */
-  /* padding-right: 89px; */
 }
 .contentFirstPostDescription p {
   font-family: PlayfairDisplay-Regular, AdobeInvisFont, MyriadPro-Regular;
@@ -360,7 +347,6 @@ nav {
   font-size: 16px;
   color: rgba(180, 173, 158, 255);
   text-align: left;
-  /* padding-left: 82px; */
   padding-left: 7.7%;
 }
 .cardsGrid {
@@ -408,14 +394,7 @@ nav {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  /* .main {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 68px;
-    padding-bottom: 0px;
-  } */
-
+  
   nav {
     display: none;
   }
@@ -459,17 +438,6 @@ nav {
     padding: 40px;
     padding-bottom: 0px;
   }
-  /* .main {
-    padding: 68px;
-    padding-bottom: 0px;
-  }
-  .v-card {
-    max-width: 100% !important;
-  }
-  .cardImage {
-    width: 85% !important;
-    height: 500px !important;
-  } */
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   nav {

@@ -149,9 +149,5 @@ export default {
     padding: 5px 12px;
   }
 }
-@media only screen and  (max-width: 325px) {
-  .loadMore {
-    padding-left: 0px;
-  }
-}
+
 </style>

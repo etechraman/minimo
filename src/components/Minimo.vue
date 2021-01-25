@@ -439,7 +439,7 @@ nav {
     padding-bottom: 0px;
   }
 }
-@media only screen and (min-width: 180px) and (max-width: 425px) {
+@media only screen and (min-width: 179px) and (max-width: 425px) { 
   nav {
     display: none;
   }
